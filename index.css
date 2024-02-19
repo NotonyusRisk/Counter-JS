@@ -1,7 +1,15 @@
 body{
-    background-color: #202020;
+    background-color: #000000;
     color: white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    padding: 50px;
+    width: 70%;
 }
 
 h1{
@@ -15,7 +23,34 @@ h2{
 button{
     width: 120px;
     height: 40px;
-    font-family: Arial, Helvetica, sans-serif, bold;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 17px;
+    border-color: black;
+    background-color: rgb(65, 65, 65);
+    border-width: 0px;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+#decrease:hover{
+    color: red;
+    border-color: red;
+    border-width: 5px;
+}
+
+#increase:hover{
+    color: green;
+    border-color: green;
+    border-width: 5px;
+}
+
+#reset:hover{
+    color: gray;
+    border-color: gray;
+    border-width: 5px;
 }

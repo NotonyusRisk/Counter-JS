@@ -16,14 +16,17 @@ reset.onclick = resetear;
 function disminuir(){
     numero -= 1
     num.innerHTML = numero
+    num.style.color = 'rgb(128, 0, 0)'
 }
 
 function aumentar(){
     numero += 1
     num.innerHTML = numero
+    num.style.color = 'rgb(0, 128, 0)'
 }
 
 function resetear(){
     numero = 0
     num.innerHTML = numero
+    num.style.color = 'rgb(255, 255, 255)'
 }
