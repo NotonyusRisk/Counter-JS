@@ -8,24 +8,26 @@ body{
 }
 
 main{
-    padding: 50px;
-    width: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
-    font-size: 70px;
+    font-size: 120px;
 }
 
 h2{
-    font-size: 50px;
+    font-size: 100px;
 }
 
 button{
-    width: 120px;
-    height: 40px;
+    width: 180px;
+    height: 60px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 17px;
+    font-size: 25px;
     border-color: black;
     background-color: rgb(65, 65, 65);
     border-width: 0px;
@@ -35,6 +37,7 @@ button{
 .buttons{
     display: flex;
     justify-content: space-around;
+    width: 50%;
 }
 
 #decrease:hover{
@@ -50,7 +53,69 @@ button{
 }
 
 #reset:hover{
-    color: gray;
+    color: white;
     border-color: gray;
     border-width: 5px;
+}
+
+@media (max-width: 1200px){
+    
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    button{
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .buttons{
+        width: 60%;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    button{
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .buttons{
+        width: 65%;
+    }
+}
+
+@media (max-width: 600px){
+    
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    button{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .buttons{
+        width: 70%;
+    }
 }
