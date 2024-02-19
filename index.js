@@ -8,9 +8,9 @@ let numero = 0
 num.innerHTML = numero
 
 //Configuración de botones
-decrease.onclick = aumentar
-increase.onclick = disminuir
-reset.onclick = resetear
+decrease.onclick = disminuir;
+increase.onclick = aumentar;
+reset.onclick = resetear;
 
 //Funciones
 function disminuir(){
